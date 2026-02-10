@@ -167,6 +167,31 @@
 
     /* Évite le scroll du body quand le menu est ouvert (mobile) */
     body.menu-open { overflow: hidden; }
+
+    /* Bouton de téléchargement */
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      margin: 10px 0;
+    }
+
+    .download-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+      color: #ffeb3b;
+    }
+
+    .download-btn i {
+      margin-right: 8px;
+    }
+    
   </style>
 </head>
 <body>
@@ -256,6 +281,13 @@
             <li>Animaux</li>
             <li>Musique</li>
             </ul>
+          
+        <!-- Bouton de téléchargement -->
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="lien-vers-ton-cv.pdf" download="/assets/CV-FerancelIverson_DIAHOUILA.pdf" class="download-btn">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+            </div>
         </div>
     </section>
 
@@ -386,5 +418,6 @@
 </body>
 
 </html>
+
 
 
